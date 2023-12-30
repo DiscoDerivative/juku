@@ -1,0 +1,22 @@
+Introduction
+Introduction to Testing
+Ensure the software produces the correct result and efficiency.
+Consider if the software works with edge cases, fails under high loads, knows how to handle incorrect data, and integrates with the rest of the system properly.
+Make sure there is version control to restore to a backup in case an error happens.
+Debugging
+Debugging process includes locating the source of the bug, determining how to fix the bug, and implementing the solution.
+Locating the bug takes a long time and needs print statements or debugging tools to find it.
+What Does Testing Prove
+Testing proves that the tests being run work correctly. 
+Testing does not prove software is correct.
+Time debugging is proportional to the bugs being found.
+Almost all software has bugs in it.
+Testing Vs Debugging
+Testing and debugging are not the same.
+Testing is when you run software and determine the result is what you expect it to be.
+Debugging is the process of trying to locate and fix a problem in code you know has a bug.
+In a company, the QA team runs tests and sends a bug report to the PM or team lead. The PM or team lead will tell a developer to debug the program.
+
+Definitions: testing, debugging
+Application: Why do we test software? What does testing prove? What is the difference between testing and debugging?
+Niche: Who does the testing in a large company? Who does the debugging in a large company? What considerations are needed in testing? Why is version control needed in testing?
