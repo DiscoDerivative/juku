@@ -1,0 +1,47 @@
+Types of Testing
+Types of Testing
+There are different types of testing which test software in different ways. This will show how to make testing your code complete.
+
+Unit Testing
+Unit testing breaks the code down to small units such as functions and determines if they produce the correct result.
+This is used to test small pieces of code before implementing them together, one of the reasons to consider during testing if the software is implemented properly.
+If we know that small areas of code are bug-free we do not have to look at the code the same way to see if it contains bugs, we just check how it's implemented instead.
+Unit tests work by passing functions data to see the expected output. These tests are usually automated.
+
+Black Box Testing
+Black box testing is a way of designing a unit test.
+It treats each functional unit like a box where we don't know the logic behind the box but we know that if we put certain data in the box, then a certain value should come out.
+Since we don’t know what’s in the box we can’t structure our tests to take advantage of it. 
+Black box only relies on input and output of each functional unit.
+White Box Testing
+In white box testing, we take advantage of the internal structure of the code to design tests that test every path of the code.
+If we only rely on black box testing, we have no idea that we tested every path of the code.
+White box testing gives us accuracy and higher confidence that our code works correctly.
+
+Integration Testing
+Integration testing is designed to make sure the group of functions work as a whole
+A unit testing framework can be used for integration testing or carried out in other ways.
+
+Functional Testing
+Function testing focuses on the business requirements of the software
+Functional testing verifies that the output is correct without looking at the internal state of the system
+For example an integration test can look at if you accessed the database and entered information and committed the change. The functional test would check that the correct value has been stored in the database without checking to see how it's done, or more of what is done.
+End to End Testing
+End to end testing replicates user behavior to see if their tasks work as expected.
+It can be difficult to automate end to end testing and difficult to maintain scenarios of how the software is used by the user over time.
+Load Testing
+Load testing checks to see if the software works under high loads.
+For example load testing a web application might involve seeing if it can handle 100 simultaneous connections. Or a database application involves seeing if it can handle 1000 simultaneous queries at the same time.
+Load testing is combined with stress testing which tries to push the normal operating requirements to see when it breaks.If stress testing reveals that it doesn't break beyond your expected usage of the application, it's an indicator that your software is in good shape.
+Security Testing
+Security testing checks to see if the software meets the security requirements.
+It can involve checking if certain web pages can only be accessed after logging in. Or checking if the current user access can only access information they are supposed to.It could also involve penetration testing.
+Acceptance Testing
+Acceptance testing verifies that the program meets all business requirements.
+The entire finished application is tested in accordance to how a user would use the application. If all requirements are met, then it shows that the customer requirements are met.
+Regression Testing
+Regression testing is when you test after every change to the code.
+The goal of regression testing is to ensure new changes don't break the code. It is typically used in some software development methodologies to ensure that the code is bug free when being checked into the repository. This prevents developers from building upon code that has errors.
+
+Definition: unit testing, black box testing, white box testing, integration testing, functional testing, end to end testing, load testing, security testing, acceptance testing, regression testing
+Application: What is the goal of each?
