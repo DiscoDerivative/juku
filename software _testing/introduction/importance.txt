@@ -1,0 +1,30 @@
+The Importance of Testing
+The Need for Testing
+*What is the root cause of the bug and how can it be prevented?
+Famous Software Bugs
+The First Bug
+Grace Hopper discovered the first bug in 1947 when she was using the Harvard II mark computer and discovered a calculation was not working.The problem was tracked down to a moth being stuck between relays inside the computer.
+
+The root cause of the bug was being stuck in the relay of the computer. It can be prevented by checking or cleaning the relays of the computer in the future.
+Therac-25
+Therac-25 was a medical instrument that delivered radiation to cancer patients.
+Therac-25 had a bug that was triggered by an incorrect input on the keypad, giving a patient a lethal dose of radiation. 
+The software was made to run as two threads that shared variables. The access to the variables were not synchronized so the thread that would change the variable would be randomized.
+The root cause of the bug was due to not synchronizing access to the variables, having a programmer who isn't knowledgeable on concurrent software, no formal testing and evaluation of the software and not explaining error codes within the program.
+The Ariane 5 Disaster
+The Ariane 5 was a rocket launched from French Guiana in 1996 with the purpose of carrying scientific instruments to space. After 37 seconds in the air, it rotated 90 degrees the wrong way and broke apart due to aerodynamic forces. It triggered the self destruction feature and cost $370 million in damages.
+The bug was located in the inertial reference system. The inertial reference system provides the current position, orientation and velocity of a moving object. A 64 bit floating point value tracked a value called the horizontal bias. At some point the value was assigned to a 16 bit integer. When the value exceeded the capacity of a 16 bit integer, the value was changed to a diagnostic value instead
+Root cause of the problem (not testing) not fixing the horizontal bias being truncated, (bad test) letting the diagnostic value be interpreted as a flight value, not making necessary changes to inherited software, and applying changes to the software when you change the project requirements. 
+It can be prevented by testing the software, changing how the tests are run and changing the software when project requirements are changed.
+The Mars Climate Orbiter
+The Mars climate orbiter was an expensive satellite designed for Mars with the purpose of orbiting Mars over a Martian year and reporting its temperature and pictures of dust storms. When it approached mars it used its solar rays to protect them when going to the upper layers of the martian atmosphere. Then it used its reaction control system to position into the upper layers of the martian atmosphere.
+On September 23rd 1999, it was not on the correct trajectory it was supposed to be on and burned up in the Martian atmosphere.
+One of the problems was cosmic radiation. The satellite had to reposition many times. The solar arrays caught the sun rays causing a solar sail effect. This effect causes the sun to exert a minor force on the object. Since the satellite was traveling 190 km, it added 170 km from where it was supposed to be.
+There was a bug in the ground control software in which the software that was supposed to convert a value to another when dealing with both imperial and metric systems had an error. This error had an impact on the satellites position.
+The QA team did not know the software was using an imperial and metric system.
+There was a lack of communication between teams, no course correction, calculations on the ground were performed manually rather than using the software which the satellite used, resulting in two different sets of calculations.
+The root causes of the bug is the solar sail effect and error in ground control software moving the trajectory of the satellite, the QA team being unaware of the different measurement systems used in parts of software, lack of communication between teams and two different sets of calculations.
+It can be fixed by taking into account the solar sail effect or changing the solar arrays, better communication between teams, course correction and using the same calculation that the satellite software uses.
+
+
+Application: Where was the first bug located? What is the Ariane-5? What happened before the Ariane-5 triggered its self destruction? What were the root causes for the bugs in Ariane-5? What is the Therac-25? Why did it give a lethal dose of radiation? What were the root causes for the bugs in Ariane-5? What is the Mars Climate orbiter? What two reasons changed its position? What were the root causes for the bug in the Mars Climate orbiter?
